@@ -44,6 +44,7 @@ header {
 /* Ensure main content stretches so footer sits at bottom if content is short */
 main {
   flex: 1;
+  padding: 1rem;
 }
 
 footer {
