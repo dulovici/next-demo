@@ -27,12 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-[family-name:var(--font-geist-sans)]`}
       >
         <header className="bg-slate-900 text-white p-4 text-center">
           <Navigation />
         </header>
-        {children}
+        <main>{children}</main>
         <footer className="bg-slate-900 text-white p-4 text-center">
           Footer
         </footer>

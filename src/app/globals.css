@@ -14,8 +14,42 @@
   }
 }
 
+/* Make the page fill the viewport and allow flex layout */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  padding-top: 4rem; /* Keep space for fixed header */
+  /* Removed padding-bottom since footer is no longer fixed */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: #1e293b;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Ensure main content stretches so footer sits at bottom if content is short */
+main {
+  flex: 1;
+}
+
+footer {
+  /* Removed position: fixed; and bottom:0; */
+  background: #1e293b;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
 }
