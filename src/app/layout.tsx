@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${helveticaNeue.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-[family-name:var(--font-helvetica-neue)]`}
+        className={`${helveticaNeue.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-[family-name:var(--font-geist-sans)]`}
       >
         <header className="p-4 text-center">
           <Header />

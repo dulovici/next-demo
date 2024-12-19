@@ -1,8 +1,8 @@
 import React from "react";
 import Avatar from "./Avatar";
 import LanguagePicker from "./LanguagePicker";
-import Navigation from "./navigation";
 import MobileNavigation from "./MobileNavigation";
+import Navigation from "./navigation";
 
 const Header = () => {
   return (

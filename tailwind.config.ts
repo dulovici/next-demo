@@ -9,20 +9,30 @@ export default {
   theme: {
     extend: {
       screens: {
-        // Custom breakpoints for laptop, tablet, and mobile
-        sm: "480px", // Small mobile devices
-        md: "768px", // Tablets
-        lg: "1024px", // Small laptops
-        xl: "1280px", // Large laptops/desktops
-        "2xl": "1440px", // Extra-large desktops
+        sm: "480px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1440px",
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#5840CE", // Purple
-        secondary: "#24156F", // Dark Purple
-        accent: "#E7E3F8", // Light Purple
-        muted: "#424242CC", // Muted Gray
+        primary: "#5840CE",
+        secondary: "#24156F",
+        accent: "#E7E3F8",
+        muted: "#424242CC",
+      },
+      fontFamily: {
+        default: ["var(--font-helvetica-neue)", "Arial", "sans-serif"],
+      },
+      fontWeight: {
+        thin: "100",
+        light: "300",
+        normal: "400",
+        medium: "500",
+        bold: "700", 
+        black: "900",
       },
       spacing: {
         128: "32rem",

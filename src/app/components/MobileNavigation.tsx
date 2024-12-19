@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { useState } from "react";
 import Avatar from "./Avatar";
 import LanguagePicker from "./LanguagePicker";
 
@@ -35,11 +34,11 @@ const MobileNavigation = () => {
 
       {/* Fullscreen Overlay Menu */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-white z-50 flex flex-col p-6">
+        <div className="fixed inset-0 bg-accent z-50 flex flex-col p-6">
           {/* Header Section */}
           <div className="flex justify-between items-center mb-8">
             <Avatar />
-            <div className="flex">
+            <div className="flex items-center gap-4">
               <LanguagePicker
                 flagUrl="https://img.freeflagicons.com/thumb/round_button_with_metal_frame/united_kingdom/united_kingdom_640.png"
                 languageCode="EN"
@@ -68,36 +67,50 @@ const MobileNavigation = () => {
           </div>
 
           {/* Navigation Links */}
-          <nav className="flex flex-col gap-6 text-primary">
+          <nav className="flex flex-col gap-6 text-primary font-bold">
             <Link
               href="/"
-              className="text-lg font-bold flex justify-between items-center"
+              className="text-lg flex justify-between items-center"
+              onClick={() => setIsMenuOpen(false)}
             >
-              PRODUCTS <span>&#8250;</span>
+              <span className="font-bold">PRODUCTS</span>{" "}
+              <span className="font-bold">&#8250;</span>
             </Link>
+
             <Link
               href="/industries"
-              className="text-lg font-bold flex justify-between items-center"
+              className="text-lg flex justify-between items-center"
+              onClick={() => setIsMenuOpen(false)}
             >
-              INDUSTRIES <span>&#8250;</span>
+              <span className="font-bold">INDUSTRIES</span>{" "}
+              <span className="font-bold">&#8250;</span>
             </Link>
+
             <Link
               href="/solutions"
-              className="text-lg font-bold flex justify-between items-center"
+              className="text-lg flex justify-between items-center"
+              onClick={() => setIsMenuOpen(false)}
             >
-              TAILOR MADE SOLUTIONS <span>&#8250;</span>
+              <span className="font-bold">TAILOR MADE SOLUTIONS</span>{" "}
+              <span className="font-bold">&#8250;</span>
             </Link>
+
             <Link
               href="/pricing"
-              className="text-lg font-bold flex justify-between items-center"
+              className="text-lg flex justify-between items-center"
+              onClick={() => setIsMenuOpen(false)}
             >
-              PRICING <span>&#8250;</span>
+              <span className="font-bold">PRICING</span>{" "}
+              <span className="font-bold">&#8250;</span>
             </Link>
+
             <Link
               href="/contact"
-              className="text-lg font-bold flex justify-between items-center"
+              className="text-lg flex justify-between items-center"
+              onClick={() => setIsMenuOpen(false)}
             >
-              CONTACT <span>&#8250;</span>
+              <span className="font-bold">CONTACT</span>{" "}
+              <span className="font-bold">&#8250;</span>
             </Link>
           </nav>
         </div>
