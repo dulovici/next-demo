@@ -17,7 +17,7 @@ const FeaturesSection = () => {
         />
 
         {/* Key Features Card */}
-        <div className="rounded-tr-xl rounded-br-xl rounded-bl-xl bg-gradient-to-r from-primary to-secondary text-white p-4 md:p-5  shadow-lg max-w-md lg:-mt-16 sm:w-full">
+        <div className="rounded-tr-xl rounded-br-xl rounded-bl-xl bg-gradient-to-r from-primary to-secondary text-white p-4 md:p-5  shadow-lg max-w-md lg:-mt-20 lg:mr-4 sm:w-full">
           <h3 className="text-base md:text-lg font-bold mb-3">Key features:</h3>
           <ul className="list-disc pl-5 space-y-1 text-xs md:text-sm leading-snug">
             <li>Smart target-setting and sales forecast</li>
