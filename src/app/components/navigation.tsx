@@ -6,50 +6,30 @@ import React from "react";
 const Navigation = () => {
   const pathname = usePathname();
 
+  const links = [
+    { href: "/", label: "Product" },
+    { href: "/industries", label: "Industries" },
+    { href: "/solutions", label: "Tailor made solutions" },
+    { href: "/pricing", label: "Pricing" },
+    { href: "/contact", label: "Contact" },
+  ];
+
   return (
     <nav className="flex gap-8">
-      <Link
-        href="/"
-        className={pathname === "/" ? "font-bold mr-4" : "text-muted mr-4"}
-      >
-        Product
-      </Link>
-
-      <Link
-        href="/industries"
-        className={
-          pathname === "/industries" ? "font-bold mr-4" : "text-muted mr-4"
-        }
-      >
-        Industries
-      </Link>
-
-      <Link
-        href="/solutions"
-        className={
-          pathname === "/solutions" ? "font-bold mr-4" : "text-muted mr-4"
-        }
-      >
-        Tailor made solutions
-      </Link>
-
-      <Link
-        href="/pricing"
-        className={
-          pathname === "/pricing" ? "font-bold mr-4" : "text-muted mr-4"
-        }
-      >
-        Pricing
-      </Link>
-
-      <Link
-        href="/contact"
-        className={
-          pathname === "/contact" ? "font-bold mr-4" : "text-muted mr-4"
-        }
-      >
-        Contact
-      </Link>
+      {links.map((link) => (
+        <Link
+          key={link.href}
+          href={link.href}
+          className={`nav-link ${
+            pathname === link.href ? "nav-link-active" : ""
+          }`}
+        >
+          <div className="flex flex-col justify-center items-center">
+            <p>{link.label}</p>
+            {pathname === link.href && <div className="nav-underline"></div>}
+          </div>
+        </Link>
+      ))}
     </nav>
   );
 };

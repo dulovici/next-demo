@@ -2,7 +2,7 @@ import React from "react";
 import Avatar from "./Avatar";
 import LanguagePicker from "./LanguagePicker";
 import MobileNavigation from "./MobileNavigation";
-import Navigation from "./navigation";
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (

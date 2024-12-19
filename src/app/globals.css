@@ -25,3 +25,17 @@ body {
   line-height: 1.5;
   margin: 0;
 }
+
+@layer utilities {
+  .nav-link {
+    @apply flex flex-col items-center justify-center text-muted transition-all;
+  }
+
+  .nav-link-active {
+    @apply font-bold text-primary;
+  }
+
+  .nav-underline {
+    @apply w-2/3 h-[2px] bg-primary transition-all;
+  }
+}

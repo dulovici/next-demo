@@ -8,6 +8,14 @@ import LanguagePicker from "./LanguagePicker";
 const MobileNavigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const links = [
+    { href: "/", label: "PRODUCTS" },
+    { href: "/industries", label: "INDUSTRIES" },
+    { href: "/solutions", label: "TAILOR MADE SOLUTIONS" },
+    { href: "/pricing", label: "PRICING" },
+    { href: "/contact", label: "CONTACT" },
+  ];
+
   return (
     <div>
       {/* Hamburger Icon */}
@@ -68,50 +76,17 @@ const MobileNavigation = () => {
 
           {/* Navigation Links */}
           <nav className="flex flex-col gap-6 text-primary font-bold">
-            <Link
-              href="/"
-              className="text-lg flex justify-between items-center"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <span className="font-bold">PRODUCTS</span>{" "}
-              <span className="font-bold">&#8250;</span>
-            </Link>
-
-            <Link
-              href="/industries"
-              className="text-lg flex justify-between items-center"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <span className="font-bold">INDUSTRIES</span>{" "}
-              <span className="font-bold">&#8250;</span>
-            </Link>
-
-            <Link
-              href="/solutions"
-              className="text-lg flex justify-between items-center"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <span className="font-bold">TAILOR MADE SOLUTIONS</span>{" "}
-              <span className="font-bold">&#8250;</span>
-            </Link>
-
-            <Link
-              href="/pricing"
-              className="text-lg flex justify-between items-center"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <span className="font-bold">PRICING</span>{" "}
-              <span className="font-bold">&#8250;</span>
-            </Link>
-
-            <Link
-              href="/contact"
-              className="text-lg flex justify-between items-center"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <span className="font-bold">CONTACT</span>{" "}
-              <span className="font-bold">&#8250;</span>
-            </Link>
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-lg flex justify-between items-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <span>{link.label}</span>
+                <span>&#8250;</span>
+              </Link>
+            ))}
           </nav>
         </div>
       )}
