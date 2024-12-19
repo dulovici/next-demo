@@ -47,10 +47,7 @@ const MobileNavigation = () => {
           <div className="flex justify-between items-center mb-8">
             <Avatar />
             <div className="flex items-center gap-4">
-              <LanguagePicker
-                flagUrl="https://img.freeflagicons.com/thumb/round_button_with_metal_frame/united_kingdom/united_kingdom_640.png"
-                languageCode="EN"
-              />
+              <LanguagePicker />
               <button
                 onClick={() => setIsMenuOpen(false)}
                 className="p-2"

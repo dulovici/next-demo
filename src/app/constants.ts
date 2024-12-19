@@ -1,0 +1,2 @@
+export const UK_FLAG = "https://img.freeflagicons.com/thumb/round_button_with_metal_frame/united_kingdom/united_kingdom_640.png"
+export const SR_FLAG = "https://img.freeflagicons.com/thumb/round_button_with_metal_frame/serbia/serbia_640.png"

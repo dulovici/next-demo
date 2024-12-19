@@ -12,11 +12,9 @@ const Header = () => {
       <div className="hidden lg:flex">
         <Navigation />
       </div>
+
       <div className="flex items-center gap-4">
-        <LanguagePicker
-          flagUrl="https://img.freeflagicons.com/thumb/round_button_with_metal_frame/united_kingdom/united_kingdom_640.png"
-          languageCode="EN"
-        />
+        <LanguagePicker />
         {/* Mobile Navigation */}
         <MobileNavigation />
       </div>
