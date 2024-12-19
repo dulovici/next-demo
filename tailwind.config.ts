@@ -20,7 +20,7 @@ export default {
         foreground: "var(--foreground)",
         primary: "#5840CE",
         secondary: "#24156F",
-        accent: "#E7E3F8",
+        accent: "#f7f6f9",
         muted: "#424242CC",
       },
       fontFamily: {
