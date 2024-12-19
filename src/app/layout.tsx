@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navigation from "./components/navigation";
+import Header from "./components/Header";
+
+// Add Helvetica Neue LT Std
+const helveticaNeue = localFont({
+  src: "./fonts/HelveticaNeueLTStd-Lt.woff",
+  variable: "--font-helvetica-neue",
+  weight: "100 900",
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,15 +34,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-[family-name:var(--font-geist-sans)]`}
+        className={`${helveticaNeue.variable} ${geistSans.variable} ${geistMono.variable} antialiased font-[family-name:var(--font-helvetica-neue)]`}
       >
-        <header className="bg-slate-900 text-white p-4 text-center">
-          <Navigation />
+        <header className="p-4 text-center">
+          <Header />
         </header>
         <main>{children}</main>
-        <footer className="bg-slate-900 text-white p-4 text-center">
-          Footer
-        </footer>
       </body>
     </html>
   );

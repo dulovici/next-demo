@@ -7,33 +7,45 @@ const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <nav>
+    <nav className="flex gap-8">
       <Link
         href="/"
-        className={pathname === "/" ? "font-bold mr-4" : "text-blue-500 mr-4"}
+        className={pathname === "/" ? "font-bold mr-4" : "text-muted mr-4"}
       >
-        Home
+        Product
       </Link>
-      <Link
-        href="/about"
-        className={
-          pathname === "/about" ? "font-bold mr-4" : "text-blue-500 mr-4"
-        }
-      >
-        About DOP
-      </Link>
+
       <Link
         href="/industries"
         className={
-          pathname === "/industries" ? "font-bold mr-4" : "text-blue-500 mr-4"
+          pathname === "/industries" ? "font-bold mr-4" : "text-muted mr-4"
         }
       >
         Industries
       </Link>
+
+      <Link
+        href="/solutions"
+        className={
+          pathname === "/solutions" ? "font-bold mr-4" : "text-muted mr-4"
+        }
+      >
+        Tailor made solutions
+      </Link>
+
+      <Link
+        href="/pricing"
+        className={
+          pathname === "/pricing" ? "font-bold mr-4" : "text-muted mr-4"
+        }
+      >
+        Pricing
+      </Link>
+
       <Link
         href="/contact"
         className={
-          pathname === "/contact" ? "font-bold mr-4" : "text-blue-500 mr-4"
+          pathname === "/contact" ? "font-bold mr-4" : "text-muted mr-4"
         }
       >
         Contact
