@@ -19,13 +19,13 @@ const ProductVideoSection = () => {
             d="M5 12h14M12 5l7 7-7 7"
           />
         </svg>
-        OPTYWISE IN 60 SECONDS
+        OPTIWYSE IN 60 SECONDS
       </button>
 
       {/* List Section */}
       <ul className=" list-disc mt-6 space-y-4 text-gray-700 text-sm md:text-base leading-relaxed pl-4">
         <li>
-          Learn about OPTYWISE in an information-packed video and continue with
+          Learn about OPTIWYSE in an information-packed video and continue with
           the interactive web presentation.
         </li>
         <li>No need to leave an email to access the complete presentation.</li>

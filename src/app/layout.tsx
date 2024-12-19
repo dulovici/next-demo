@@ -22,8 +22,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Optywise",
-  description: "Optywise",
+  title: "Optiwyse",
+  description: "Optiwyse",
 };
 
 export default function RootLayout({

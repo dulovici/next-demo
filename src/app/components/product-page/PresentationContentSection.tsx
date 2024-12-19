@@ -11,7 +11,7 @@ const PresentationContentSection = () => {
       {/* Content */}
       <div className="flex sm:flex-col sm:gap-3 md:flex-row md:gap-20">
         <ul className="list-disc pl-5 space-y-3 text-sm md:text-base text-foreground text-gray-700">
-          <li>Slide 1: OPTYWISE in 60s</li>
+          <li>Slide 1: OPTIWYSE in 60s</li>
           <li>Slide 2: Optimization</li>
           <li>Slide 3: Solution</li>
           <li>Slide 4: Buyer Side App</li>
