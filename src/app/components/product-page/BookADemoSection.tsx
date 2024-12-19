@@ -9,7 +9,7 @@ const BookADemoSection = () => {
       </button>
 
       {/* List Section */}
-      <ul className="list-disc mt-6 space-y-4 text-gray-700 text-sm md:text-base leading-relaxed">
+      <ul className="list-disc mt-6 space-y-4 text-gray-700 text-sm md:text-base leading-relaxed pl-4">
         <li>We value your time.</li>
         <li>We usually reply within 15 minutes.</li>
         <li>30s to leave your contact info.</li>

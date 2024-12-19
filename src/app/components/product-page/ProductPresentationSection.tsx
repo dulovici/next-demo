@@ -19,11 +19,11 @@ const ProductVideoSection = () => {
             d="M5 12h14M12 5l7 7-7 7"
           />
         </svg>
-        DOP IN 60 SECONDS
+        OPTYWISE IN 60 SECONDS
       </button>
 
       {/* List Section */}
-      <ul className=" list-disc mt-6 space-y-4 text-gray-700 text-sm md:text-base leading-relaxed">
+      <ul className=" list-disc mt-6 space-y-4 text-gray-700 text-sm md:text-base leading-relaxed pl-4">
         <li>
           Learn about DOP in an information-packed video and continue with the
           interactive web presentation.
