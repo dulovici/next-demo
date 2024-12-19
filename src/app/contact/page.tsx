@@ -5,8 +5,10 @@ import React from "react";
 const ContactUs = () => {
   // const router = useRouter();
   return (
-    <div className="flex justify-between">
-      <h1>About Us</h1>
+    <div>
+      <h1 className="text-center py-10 text-secondary text-lg font-bold">
+        COMING SOON
+      </h1>
       {/* <button
         onClick={() => router.push("/")}
         className="bg-blue-500 text-white p-1 rounded-md"
