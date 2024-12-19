@@ -1,18 +1,25 @@
 import React from "react";
-import Navigation from "./navigation";
 import Avatar from "./Avatar";
 import LanguagePicker from "./LanguagePicker";
+import Navigation from "./navigation";
+import MobileNavigation from "./MobileNavigation";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center px-14">
+    <div className="flex justify-between items-center px-6 md:px-14 py-4">
       <Avatar />
-      <Navigation />
-      <LanguagePicker
-        flagUrl="https://img.freeflagicons.com/thumb/round_button_with_metal_frame/united_kingdom/united_kingdom_640.png"
-        // flagUrl="https://img.freeflagicons.com/thumb/round_button_with_metal_frame/serbia/serbia_640.png"
-        languageCode="EN"
-      />
+      {/* Desktop Navigation */}
+      <div className="hidden lg:flex">
+        <Navigation />
+      </div>
+      <div className="flex items-center gap-4">
+        <LanguagePicker
+          flagUrl="https://img.freeflagicons.com/thumb/round_button_with_metal_frame/united_kingdom/united_kingdom_640.png"
+          languageCode="EN"
+        />
+        {/* Mobile Navigation */}
+        <MobileNavigation />
+      </div>
     </div>
   );
 };
