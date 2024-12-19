@@ -25,7 +25,13 @@ const Navigation = () => {
           }`}
         >
           <div className="flex flex-col justify-center items-center">
-            <p>{link.label}</p>
+            <div className="flex justify-center items-center gap-2">
+              <p>{link.label}</p>
+              {(link.href === "/" || link.href === "/industries") && (
+                <span className="text-xs">▼</span>
+              )}
+            </div>
+
             {pathname === link.href && <div className="nav-underline"></div>}
           </div>
         </Link>
