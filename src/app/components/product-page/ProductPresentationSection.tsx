@@ -25,8 +25,8 @@ const ProductVideoSection = () => {
       {/* List Section */}
       <ul className=" list-disc mt-6 space-y-4 text-gray-700 text-sm md:text-base leading-relaxed pl-4">
         <li>
-          Learn about DOP in an information-packed video and continue with the
-          interactive web presentation.
+          Learn about OPTYWISE in an information-packed video and continue with
+          the interactive web presentation.
         </li>
         <li>No need to leave an email to access the complete presentation.</li>
         <li>

@@ -18,8 +18,8 @@ const Hero = () => {
         efficiency to every step of the ordering process. It enables smart
         decision-making through predictive analytics and AI, real-time order
         tracking, a cost-saving route optimizer, and customizable features
-        tailored to your business. DOP is transforming the way suppliers and
-        buyers interact.
+        tailored to your business. OPTYWISE is transforming the way suppliers
+        and buyers interact.
       </p>
     </section>
   );
