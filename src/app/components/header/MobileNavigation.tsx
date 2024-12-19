@@ -53,6 +53,7 @@ const MobileNavigation = () => {
                 className="p-2"
                 aria-label="Close Menu"
               >
+                {/* replace with X icon */}
                 <svg
                   className="w-6 h-6 text-primary"
                   fill="none"
