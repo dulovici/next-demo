@@ -2,55 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Root Variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-default: var(--font-helvetica-neue);
 }
 
-@media (prefers-color-scheme: dark) {
+/* Light Mode Overrides */
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
 
-/* Make the page fill the viewport and allow flex layout */
-html, body {
-  height: 100%;
+/* Body Styles */
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: var(--font-default), Arial, Helvetica, sans-serif;
+  line-height: 1.5;
   margin: 0;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  padding-top: 4rem; /* Keep space for fixed header */
-  /* Removed padding-bottom since footer is no longer fixed */
-}
+@layer utilities {
+  .nav-link {
+    @apply flex flex-col items-center justify-center text-muted transition-all;
+  }
 
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
-  background: #1e293b;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
+  .nav-link-active {
+    @apply font-bold text-primary;
+  }
 
-/* Ensure main content stretches so footer sits at bottom if content is short */
-main {
-  flex: 1;
-  padding: 1rem;
-}
-
-footer {
-  /* Removed position: fixed; and bottom:0; */
-  background: #1e293b;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+  .nav-underline {
+    @apply w-2/3 h-[2px] bg-primary transition-all;
+  }
 }
