@@ -18,10 +18,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#5840CE",
-        secondary: "#24156F",
-        accent: "#f7f6f9",
-        muted: "#424242CC",
+        primary: "#5840CE", //purple
+        secondary: "#24156F", //dark purple
+        accent: "#f7f6f9", //light purple
+        muted: "#424242CC", //gray
       },
       fontFamily: {
         default: ["var(--font-helvetica-neue)", "Arial", "sans-serif"],
